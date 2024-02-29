@@ -20,6 +20,7 @@ do {
         case 1:
             System.out.println("Please Enter Car Model");
             String model=input.next();
+            model+=input.nextLine();
             System.out.println("Please Enter Rental Day:");
             int days=input.nextInt();
             Vehicle car=new Car(model,days);
@@ -29,7 +30,8 @@ do {
             break;
         case 2:
             System.out.println("Please Enter Bike Brand");
-            String brand=input.next();
+            String brand=input.nextLine();
+            brand+=input.nextLine();
             System.out.println("Please Enter Rental hour:");
             int hour=input.nextInt();
             Vehicle bike=new Bike(brand,hour);
@@ -40,6 +42,8 @@ do {
         case 3:
             System.out.println("Please Enter Truck type");
             String type=input.next();
+            type+=input.nextLine();
+            input.nextLine();
             System.out.println("Please Enter Rental Week:");
             int week=input.nextInt();
             Vehicle truck=new Truck(type,week);
